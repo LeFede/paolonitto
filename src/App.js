@@ -1,19 +1,16 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './sass/styles.scss'
 
-import { Home } from './pages/Home';
-import { About } from './pages/About';
+import { Home, About } from './pages'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-      </nav>
+      <Navbar/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </Router>
   );
