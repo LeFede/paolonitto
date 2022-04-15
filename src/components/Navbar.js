@@ -9,9 +9,9 @@ const Navbar = () => {
     setShow((prev) => !prev)
   }
 
-  return (
-    <nav className="Navbar">
-      <div className={`${show ? 'hide' : 'show'} links`}>
+  return ( 
+    <nav className="Navbar ff-1">
+      <div className={`${show ? 'hide' : 'show'} links fs-4`}>
         <Link to='/' onClick={handleClick}>Home</Link>
         <Link to='/about' onClick={handleClick}>About</Link>
         <Link to='/gallery' onClick={handleClick}>Gallery</Link>

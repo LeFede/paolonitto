@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+.ff-1 {font-family: 'Cinzel', serif;}
+
+@for $i from 1 through 10 {
+  .fw-#{$i} {font-weight: 100 * $i};
+  .fs-#{$i} {font-size: 1em + $i * .2em};
+  .ls-#{$i} {letter-spacing: 1px * $i;}
+}

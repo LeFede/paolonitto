@@ -1,5 +1,6 @@
 import useChangeTitle from "../functions/useChangeTitle";
 
+
 const About = ({title}) => {
 
   useChangeTitle(title)

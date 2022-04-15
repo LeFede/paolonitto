@@ -1,7 +1,8 @@
 @use './reset';
 @use './vars' as *;
 @use './tools' as *;
-
+@use './custom';
+@use './base';
 
 body {
   background-color: $background-color-1;
@@ -14,13 +15,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  div {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      position: relative;
+      .bar {
+        width: 100%;
+        height: 1px;
+        background: white;
+        position: absolute;
+        border-radius: 10px;
+      }
+    }
+    small {
+      margin-top: 5px;
+    }
+  }
 }
+
+
 
 .Navbar {
   height: 100%;
   position: fixed;
   width: 100%;
+  z-index: 1;
   .links {
     align-items: center;
     background-color: grey;
@@ -33,10 +54,10 @@ body {
     transition: all .5s ease;
     width: 100%;
     .cross {
+      background-image: url("../assets/cross.svg");
       background-size: cover;
-      background: url('../assets/cross.svg');
-      height: 100px;
-      width: 100px;
+      height: $icon-size;
+      width: $icon-size;
     }
     &.show {
       transform: translatex(0)
@@ -44,15 +65,22 @@ body {
   }
 
   .button {
+    background-image: url('../assets/menu.svg');
     background-size: cover;
-    background: url('../assets/menu.svg');
-    height: 100px;
+    height: $icon-size;
     transform: translatex(-100%);
     transition: all .5s ease;
-    width: 100px;
+    width: $icon-size;
 
     &.show {
       transform: translatex(0);
     }
   }
+}
+
+canvas {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
 }
