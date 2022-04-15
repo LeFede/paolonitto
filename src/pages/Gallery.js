@@ -6,7 +6,9 @@ const Gallery = ({title}) => {
   useChangeTitle(title)
 
   return (
-    <div>Gallery</div>
+    <div className="page">
+      <h1>Gallery</h1>
+    </div>
   )
 }
 
