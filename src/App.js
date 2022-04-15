@@ -1,4 +1,4 @@
-
+import './sass/styles.scss'
 
 function App() {
   return (
