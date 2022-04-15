@@ -1,4 +1,10 @@
-const Home = () => {
+import useChangeTitle from "./useChangeTitle";
+
+
+const Home = ({title}) => {
+
+  useChangeTitle(title)
+
   return (
     <div>Home</div>
   )

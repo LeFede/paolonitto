@@ -1,3 +1,11 @@
-body {
-  background-color: red;
+@mixin responsive($query) {
+  @media only screen and (min-width: $query) {
+    @content
+  }
+}
+
+@mixin orientation($orientation) {
+  @media only screen and (orientation: $orientation) {
+    @content
+  }
 }

@@ -1,12 +1,13 @@
 import useChangeTitle from "./useChangeTitle";
 
-const About = ({title}) => {
+
+const Gallery = ({title}) => {
 
   useChangeTitle(title)
-  
+
   return (
-    <div>About</div>
+    <div>Gallery</div>
   )
 }
 
-export default About
+export default Gallery
