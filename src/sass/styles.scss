@@ -35,6 +35,9 @@ body {
   }
 }
 
+.contact {
+  z-index: 1;
+}
 
 
 .Navbar {
@@ -42,6 +45,9 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1;
+  &.show {
+    z-index: 3;
+  }
   .links {
     align-items: center;
     background-color: grey;
@@ -60,7 +66,8 @@ body {
       width: $icon-size;
     }
     &.show {
-      transform: translatex(0)
+      transform: translatex(0);
+      z-index: 3;
     }
   }
 

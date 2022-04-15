@@ -10,11 +10,12 @@ const Navbar = () => {
   }
 
   return ( 
-    <nav className="Navbar ff-1">
+    <nav className={`Navbar ff-1 ${show ? 'hide' : 'show'}`}>
       <div className={`${show ? 'hide' : 'show'} links fs-4`}>
         <Link to='/' onClick={handleClick}>Home</Link>
         <Link to='/about' onClick={handleClick}>About</Link>
         <Link to='/gallery' onClick={handleClick}>Gallery</Link>
+        <Link to='/contact' onClick={handleClick}>Contact</Link>
         <div className="cross" onClick={handleClick}/>
       </div>
       <div className={`${show ? 'show' : 'hide'} button`} onClick={handleClick}/>
