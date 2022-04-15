@@ -1,6 +1,5 @@
 const useChangeTitle = (title) => {
-  console.log(process.env.SITE_NAME)
-  return document.title = `${process.env.APP_NAME} - ${title}`
+  return document.title = `Paolo Nitto - ${title}`
 }
 
 export default useChangeTitle
