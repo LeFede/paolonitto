@@ -7,6 +7,25 @@ body {
   background-color: $background-color-1;
 }
 
-@include orientation('landscape') {
-  body {background-color: white;}
+
+.page {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar {
+  position: fixed;
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100px;
+    height: 100px;
+    background: url('../assets/menu.svg');
+  }
 }

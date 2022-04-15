@@ -1,4 +1,4 @@
-import useChangeTitle from "./useChangeTitle";
+import useChangeTitle from "../functions/useChangeTitle";
 
 
 const Gallery = ({title}) => {

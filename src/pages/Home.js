@@ -1,4 +1,4 @@
-import useChangeTitle from "./useChangeTitle";
+import useChangeTitle from "../functions/useChangeTitle";
 
 
 const Home = ({title}) => {
@@ -6,7 +6,9 @@ const Home = ({title}) => {
   useChangeTitle(title)
 
   return (
-    <div>Home</div>
+    <div className="page">
+      <h1>Home</h1>
+    </div>
   )
 }
 

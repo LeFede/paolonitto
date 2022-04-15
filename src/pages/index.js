@@ -4,6 +4,9 @@ import Gallery from './Gallery'
 
 import '../sass/styles.scss'
 
+import '../functions/setSize'
+
+
 export {
   Home,
   About, 
